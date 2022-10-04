@@ -79,7 +79,7 @@
         android:layout_marginTop="20dp">
 
         <ImageView
-            android:layout_width="182dp"
+            android:layout_width="170dp"
             android:layout_height="80dp"
             android:layout_gravity="left"
             android:layout_weight="1"
