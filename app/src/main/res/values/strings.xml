@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">BVP Library</string>
+    <string name="rules_regulation">
+\u25BA Only registered members are allowed to use the Library. Members should always carry their Valid ID cards while using the Library.\n
+\u25BA Readers should observe silence inside the Library.\n
+\u25BA Usage of Mobile phones is not permitted inside the Library Premises.\n
+\u25BA Members are themselves responsible for books issued against their lost ID.\n
+\u25BA Readers are not allowed to bring their personal books or any printed material in book form inside the Library, for which designated room only is to be read.\n
+\u25BA Members must show their Library ID Cards while entering the Library, borrowing books and journals and at any time if asked to do so by the Library staff.\n
+\u25BA The belongings like bags, umbrellas, Tiffin box and other personal belongings etc. are to be deposited at the Property Counter at the Reader’s own risk.\n
+\u25BA Every member must sign the register available at the entrance.\n
+\u25BA Members are free to browse the books as there is Open Access in the library. Once the books are taken out of the shelves they should not be replaced by them as they may be misplaced.  They should be kept on table only\n
+\u25BA Readers should not write in, mark scratches and disfigure, damage books or furniture of the Library.\n
+\u25BA Network will not be provided on Laptop brought inside the Library. The library shall not be responsible for the loss of Laptops.\n
+\u25BA Chewing, pan, spitting, smoking, eating, sleeping and talking loudly is strictly prohibited in the Library.\n
+\u25BA Newspapers, magazines, and journals must be read only in the Library on specific table/ stands and should not be taken out to any other reading area.\n
+\u25BA Books and novels are not allowed to be read in the digital and journal section of the library. Reading hall should be used for the same.\n
+\u25BA No Library material can be taken out of the Library without permission.\n
+\u25BA Anyone who violates the rules and regulations of the Library shall be liable to lose the privileges of Library Membership.\n
+\u25BA The Chief Librarian, with the approval of the Library Advisory Committee reserves the right to add, delete, alter or modify any of the above rules as and when required.
+  </string>
+
+    <string name="guildlines">
+\u25BA A student can borrow utmost three books at a time for 21 days, which are further renewable for 21 days (except in special cases). Books borrowed should not be identical.\n
+\u25BA Be present in person with your own ID card while borrowing/returning the library books.\n
+\u25BA Borrowed books should be returned on or before the stipulated date mentioned on date-slip inside the book.\n
+\u25BA For delay in returning a book students have to pay a fine of Rs. 1 (Rupees one only) per day per book.\n
+\u25BA Any late return of books accumulates a fine of Rs. 1:00 per day. When the late fine crosses rupees Twenty, one has to collect the fine slip from the Admin Office and deposit the amount at the BHARATI SAHKARI BANK LTD. PUNE COUNTER ONLY. After paying the fine submit your student copy of the fine slip to the Library Office for updating fine status.\n
+\u25BA Check the condition of the book at the time of borrowing. If any mutilation found, report instantly to the concerned library staff. Otherwise the borrower will be responsible for the damage.\n
+\u25BA Open Access is for your convenience. DO NOT misplace the books while selecting from the shelves. After consulting books DO NOT shuffle them but return them to circulation desk.\n
+\u25BA Remember book hiding and misplacing are punishable offence.\n
+\u25BA Return the borrowed books first at the Lending Counter. Don’t go inside the Lending/Reading Section with borrowed books.\n
+\u25BA If books are lost or damaged (including marking on the pages), borrower must replace the book of same edition or latest edition.
+</string>
+
+    <string name="guidlines2">
+\u25BA Books "FOR READING ROOM ONLY" and periodicals (including journals and magazines) are only to be read in the READING ROOM ONLY and cannot be carried out.\n
+\u25BA You will be allowed to study in the Reading Room with a maximum of ONE  BOOK at a time. Make an entry at the Reading Room Counter by depositing the ID card after taking a book.\n
+\u25BA When reading the newspaper, do not strew the pages around.\n
+\u25BA WHILE SELECTING FROM THE SHELVES, BE CAREFUL NOT TO MISPLACE BOOKS.\n
+\u25BA Return books to the counter after consulting them.
+</string>
+
+    <string name="note"> \u25CF Mobiles must be switched off or be kept in vibrating mode only. Receiving/calling in library is not allowed.
+ </string>
 </resources>

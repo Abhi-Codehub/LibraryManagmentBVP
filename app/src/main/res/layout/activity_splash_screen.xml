@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Splash_Screen">
+    tools:context=".Splash_Screen"
+    android:background="@drawable/backgroundgradienttwo">
 
     <ImageView
         android:id="@+id/logo"
@@ -27,10 +28,10 @@
         android:layout_marginStart="95dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="96dp"
-        android:fontFamily="sans-serif-medium"
-        android:textAlignment="center"
+        android:fontFamily="@font/literata_bold"
         android:text="BHARATI VIDYAPEETH COLLEGE OF ENGINEERING NEW DELHI"
-        android:textColor="#089CD3"
+        android:textAlignment="center"
+        android:textColor="#E0E9EF"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"

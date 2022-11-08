@@ -1,65 +1,126 @@
 package com.example.librarymanagment;
-
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.appcompat.app.AlertDialog;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.Button;
-
-import com.journeyapps.barcodescanner.ScanContract;
-import com.journeyapps.barcodescanner.ScanOptions;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_scan;
+    Button opac;
+    Button syllabus;
+    Button pyq;
+    Button ieee;
+    TextView randomcontact;
+    Button pdf_view1, pdf_view2, pdf_view3;
+    TextView importantlink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_scan = findViewById(R.id.btn_scan);
 
-        btn_scan.setOnClickListener(view->{
-            scanCode();
+        importantlink = findViewById(R.id.important_links);
+        importantlink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Links.class);
+                startActivity(intent);
+            }
+        });
+
+        pdf_view1 = findViewById(R.id.pdf_view1);
+        pdf_view1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://drive.google.com/file/d/1vAq_RDblWe078A04uUsoWpyq7RomQ9Yn/view?usp=share_link");
+            }
+        });
+
+        pdf_view2 = findViewById(R.id.pdf_view2);
+        pdf_view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://drive.google.com/file/d/1Nrz76u6C0NpfSdro0ehDRtPQwhgJqFNy/view?usp=share_link");
+            }
+        });
+
+        pdf_view3 = findViewById(R.id.pdf_view3);
+        pdf_view3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://drive.google.com/file/d/1Q51y62v4Dd9jb5Nw7iQOSrup0_PKtFeh/view?usp=share_link");
+            }
+        });
+
+
+        randomcontact = findViewById(R.id.randr_contactus);
+        String text = "Rules and Regulation | Contact Us";
+        SpannableString ss = new SpannableString(text);
+        ClickableSpan clickableSpan1 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                Intent intent = new Intent(MainActivity.this,rulesandregulation.class);
+                startActivity(intent);
+            }
+        };
+
+        ClickableSpan clickableSpan2 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+                Intent intent = new Intent(MainActivity.this,contactus.class);
+                startActivity(intent);
+            }
+        };
+        ss.setSpan(clickableSpan1,0,20, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(clickableSpan2,23,33, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        randomcontact.setText(ss);
+        randomcontact.setMovementMethod(LinkMovementMethod.getInstance());
+
+        opac = findViewById(R.id.opac);
+        syllabus = findViewById(R.id.syllabus);
+        pyq = findViewById(R.id.pyq);
+        ieee = findViewById(R.id.ieee);
+
+        opac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("http://164.100.247.26/");
+            }
+        });
+
+        syllabus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://drive.google.com/drive/folders/1LtgshQzGU0YTv8WhqX-lTVIbQBgMHMzH");
+            }
+        });
+
+        pyq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.youtube.com/watch?v=TU-yDCgpbZw");
+            }
+        });
+
+        ieee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://ieeexplore.ieee.org/Xplore/home.jsp");
+            }
         });
     }
 
-    private void scanCode() {
-        ScanOptions options = new ScanOptions();
-        options.setPrompt("Volume up to flash ON ");
-        options.setBeepEnabled(true);
-        options.setOrientationLocked(true);
-        options.setCaptureActivity(CaptureAct.class);
-        barLaucher.launch(options);
+    private void gotoUrl(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
-
-    ActivityResultLauncher<ScanOptions> barLaucher = registerForActivityResult(new ScanContract(),result ->{
-        if (result.getContents() !=null){
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setTitle("Result");
-            builder.setMessage(result.getContents());
-            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    dialogInterface.dismiss();
-                }
-            }).show();
-        }
-    });
-
-    public void opac (View view){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://115.111.246.28:8380/opac/browse/browse.html"));
-        startActivity(browserIntent);
-    }
-    public void pdfViewer (View view) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/folders/1OAvfzK6Gjxg-qmQJ92ROJqWMm4H664-d?usp=sharing"));
-        startActivity(browserIntent);
-
-    }
-
 }
