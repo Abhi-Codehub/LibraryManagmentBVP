@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".rulesandregulation"
     android:orientation="vertical"
-    >
+    android:background="@color/white" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,6 +73,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp"
             android:elevation="30dp">
 
@@ -104,7 +105,7 @@
                         android:layout_marginEnd="10dp"
                         android:fontFamily="@font/barlow_semibold"
                         android:text="@string/rules_regulation"
-
+                        android:textColor="@color/black"
                         android:textSize="12dp"
                         android:textStyle="italic" />
 
@@ -120,6 +121,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp"
             android:elevation="30dp">
 
@@ -148,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/barlow_semibold"
                         android:text="@string/guildlines"
-
+                        android:textColor="@color/black"
                         android:textSize="12dp"
                         android:textStyle="italic"
                         android:layout_marginStart="10dp"
@@ -166,6 +168,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp"
             android:elevation="30dp">
 
@@ -194,7 +197,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/barlow_semibold"
                         android:text="@string/guidlines2"
-
+                        android:textColor="@color/black"
                         android:textStyle="italic"
                         android:textSize="12dp"
                         android:layout_marginStart="10dp"
@@ -210,9 +213,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:textColor="@color/fourbuttonsbg"
             android:fontFamily="@font/brygada_1918_bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
             android:text="NOTE"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -220,10 +224,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
             android:textColor="@color/fourbuttonsbg"
+            android:layout_gravity="center"
+            android:textAlignment="center"
             android:fontFamily="@font/crimson_pro_medium_italic"
             android:text="@string/note"
             android:textSize="15dp"

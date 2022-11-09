@@ -16,9 +16,9 @@ import android.widget.TextView;
 
 public class contactus extends AppCompatActivity {
 
-    TextView website;
+    TextView  website;
     ImageView map_image;
-
+    TextView  LinkedIn;
     ImageView twitter;
     ImageView instagram;
     ImageView linkedin;
@@ -29,10 +29,10 @@ public class contactus extends AppCompatActivity {
         setContentView(R.layout.activity_contactus);
 
         map_image = findViewById(R.id.map_image);
-
         twitter = findViewById(R.id.twitter_logo);
         instagram = findViewById(R.id.insta_logo);
         linkedin = findViewById(R.id.linkedin_logo);
+        LinkedIn = findViewById(R.id.linkedIn);
 
         map_image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +61,12 @@ public class contactus extends AppCompatActivity {
             }
         });
 
+        LinkedIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.linkedin.com/in/abhishek-aggarwal-1a7094210/");
+            }
+        });
 
         website = findViewById(R.id.website);
         String text = "https://bvcoend.ac.in/";

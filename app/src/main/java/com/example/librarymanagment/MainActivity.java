@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button opac;
     Button syllabus;
     Button pyq;
-    Button ieee;
+    Button ieee, explore, bvicam;
     TextView randomcontact;
     Button pdf_view1, pdf_view2, pdf_view3;
     TextView importantlink;
@@ -89,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
         syllabus = findViewById(R.id.syllabus);
         pyq = findViewById(R.id.pyq);
         ieee = findViewById(R.id.ieee);
+        explore = findViewById(R.id.ieeeExplore);
+        bvicam = findViewById(R.id.bvicam);
 
         opac.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,21 +102,35 @@ public class MainActivity extends AppCompatActivity {
         syllabus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://drive.google.com/drive/folders/1LtgshQzGU0YTv8WhqX-lTVIbQBgMHMzH");
+                gotoUrl("https://drive.google.com/file/d/105tHDIXb15eWPaC7_Jz5R9BUNGFzt38j/view?usp=share_link");
             }
         });
 
         pyq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://www.youtube.com/watch?v=TU-yDCgpbZw");
+                gotoUrl("https://drive.google.com/drive/folders/1LtgshQzGU0YTv8WhqX-lTVIbQBgMHMzH");
             }
         });
 
         ieee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://ieeexplore.ieee.org/Xplore/home.jsp");
+                gotoUrl("https://www.ieee.org/about/index.html");
+            }
+        });
+
+        explore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://ieeexplore.ieee.org/xpl/conhome/1803740/all-proceedings");
+            }
+        });
+
+        bvicam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.youtube.com/channel/UCuOPY-98JUY9T2igRpj8tIQ/videos");
             }
         });
     }

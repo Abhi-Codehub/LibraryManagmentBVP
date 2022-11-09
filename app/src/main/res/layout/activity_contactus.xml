@@ -125,9 +125,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="5dp"
-                            android:text="designation"
+                            android:text="librarian"
                             android:textColor="@color/white"
-                            android:textSize="15dp"
+                            android:textSize="12dp"
                             app:layout_constraintStart_toEndOf="@id/mam_pic"
                             app:layout_constraintTop_toBottomOf="@id/name" />
 
@@ -138,8 +138,8 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="4dp"
                             android:textColor="@color/white"
-                            android:text="emailid"
-                            android:textSize="15dp"
+                            android:text="upasana.yadav@bharatividyapeeth.edu"
+                            android:textSize="12dp"
                             app:layout_constraintStart_toEndOf="@id/mam_pic"
                             app:layout_constraintTop_toBottomOf="@id/designation" />
 
@@ -251,18 +251,69 @@
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/phoneremovebgpreview"
-            android:backgroundTint="#E3E7EB"/>
+            android:backgroundTint="#E3E7EB"
+            android:layout_marginBottom="8dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+91-7020147576"
+            android:text="011-25278443 (222) Librarian"
             android:textAlignment="center"
-            android:layout_marginBottom="30dp"
-            android:textSize="18dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="13dp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
-        
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="011-25278444 (218) Circulati"
+            android:textAlignment="center"
+            android:layout_marginBottom="5dp"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library.coedelhi@bharatividyapeeth.edu"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by ABHISHEK AGGARWAL"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information Technology Department"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/linkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://www.linkedin.com/in/abhishek-aggarwal-1a7094210/"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#13B6FF"/>
+
     </LinearLayout>
 
 </ScrollView>

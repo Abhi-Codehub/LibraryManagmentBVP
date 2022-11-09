@@ -5,8 +5,12 @@
         <item>@font/alegreya_bold</item>
         <item>@font/barlow_semibold</item>
         <item>@font/brygada_1918_bold</item>
+        <item>@font/cinzel_bold</item>
         <item>@font/crimson_pro_medium_italic</item>
+        <item>@font/jost_semibold</item>
         <item>@font/literata_bold</item>
         <item>@font/poppins_semibold</item>
+        <item>@font/quattrocento</item>
+        <item>@font/varela_round</item>
     </array>
 </resources>
