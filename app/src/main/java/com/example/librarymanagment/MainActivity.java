@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         opac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("http://164.100.247.26/");
+                gotoUrl("http://115.111.246.28:8380/opac/");
             }
         });
 

@@ -304,6 +304,15 @@
             android:textStyle="bold"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abhishekaggarwal345@gmail.com"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
             android:id="@+id/linkedIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -311,8 +320,10 @@
             android:textAlignment="center"
             android:fontFamily="@font/alegreya"
             android:textSize="15dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:textColor="#13B6FF"/>
+
+
 
     </LinearLayout>
 
