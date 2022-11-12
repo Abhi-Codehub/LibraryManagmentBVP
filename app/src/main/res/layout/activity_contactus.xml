@@ -323,6 +323,28 @@
             android:layout_marginBottom="10dp"
             android:textColor="#13B6FF"/>
 
+        <TextView
+            android:id="@+id/suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestion Link"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#FF4040"/>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewcontactus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            android:layout_gravity="center"
+            ads:adUnitId="ca-app-pub-1613752929512816/7702523401">
+        </com.google.android.gms.ads.AdView>
 
 
     </LinearLayout>

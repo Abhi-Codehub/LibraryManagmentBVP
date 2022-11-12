@@ -234,6 +234,19 @@
             android:text="@string/note"
             android:textSize="15dp"
             android:textStyle="bold" />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewRandR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            android:layout_gravity="center"
+            ads:adUnitId="ca-app-pub-1613752929512816/1711830126">
+        </com.google.android.gms.ads.AdView>
+
     </LinearLayout>
 
 </ScrollView>

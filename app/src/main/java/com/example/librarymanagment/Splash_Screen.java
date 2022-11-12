@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Splash_Screen extends AppCompatActivity {
-    private static int timer = 4000;
+    private static int timer = 3000;
 
     ImageView imageView;
     TextView textView;
