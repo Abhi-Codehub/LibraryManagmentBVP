@@ -96,7 +96,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="6.5dp"
                         android:textColor="@color/fourbuttonsbg"/>
-"
+
 
                     <TextView
                         android:layout_width="match_parent"
