@@ -1,9 +1,8 @@
-package com.example.librarymanagment;
+package com.abhishekbvp.librarymanagment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;

@@ -1,4 +1,4 @@
-package com.example.librarymanagment;
+package com.abhishekbvp.librarymanagment;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -10,7 +10,6 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdListener;

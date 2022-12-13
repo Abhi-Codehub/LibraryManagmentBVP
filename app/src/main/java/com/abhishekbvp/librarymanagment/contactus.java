@@ -1,4 +1,4 @@
-package com.example.librarymanagment;
+package com.abhishekbvp.librarymanagment;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
