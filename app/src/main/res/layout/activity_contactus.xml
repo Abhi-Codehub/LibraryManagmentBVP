@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contactus"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardBackgroundColor="@color/fourbuttonsbg"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="30dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/contact_us"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contactus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Contact Us"
+                    android:textColor="@color/white"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/contact_us"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="58dp"
+                    android:text="Updated on 20/10/2022"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/contact_us"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/fourbuttonsbg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/mam_pic"
+                            android:layout_width="70dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/upasana_mam"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Upasna yadav"
+                            android:layout_marginStart="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/mam_pic"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/designation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="librarian"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@id/mam_pic"
+                            app:layout_constraintTop_toBottomOf="@id/name" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/white"
+                            android:text="upasana.yadav@bharatividyapeeth.edu"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@id/mam_pic"
+                            app:layout_constraintTop_toBottomOf="@id/designation" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp">
+
+                    <ImageView
+                        android:id="@+id/map_image"
+                        android:onClick="maps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mapimagecollege"
+                        android:scaleType="centerInside"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.3dp"
+                    android:text="https://bvcoend.ac.in/"
+                    android:textColor="@color/link"
+                    android:textAlignment="center"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social Media"
+            android:textColor="@color/fourbuttonsbg"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="1"
+            android:columnCount="3"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/insta_logo"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="5dp"
+                android:onClick="instalogo"
+                android:src="@drawable/instagram_logo" />
+
+            <ImageView
+                android:id="@+id/twitter_logo"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:onClick="twitterlogo"
+                android:layout_columnWeight="1"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:src="@drawable/twitter_logo" />
+
+            <ImageView
+                android:id="@+id/linkedin_logo"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:onClick="linkedinlogo"
+                android:layout_columnWeight="1"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:src="@drawable/linkedin_logo" />
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textAlignment="center"
+            android:textColor="@color/fourbuttonsbg"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/phoneremovebgpreview"
+            android:backgroundTint="#E3E7EB"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="011-25278443 (222) Librarian"
+            android:textAlignment="center"
+            android:layout_marginBottom="8dp"
+            android:textSize="13dp"
+            android:textColor="@color/fourbuttonsbg"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="011-25278444 (218) Circulati"
+            android:textAlignment="center"
+            android:layout_marginBottom="5dp"
+            android:textSize="13dp"
+            android:textColor="@color/fourbuttonsbg"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library.coedelhi@bharatividyapeeth.edu"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by ABHISHEK AGGARWAL"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya"
+            android:textSize="17dp"
+            android:textColor="@color/fourbuttonsbg"
+            android:textStyle=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(GDSC Android Developer Lead)"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya"
+            android:textSize="11dp"
+            android:textColor="@color/fourbuttonsbg"
+            android:textStyle=""/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information Technology Department - 3rd Year "
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textColor="@color/fourbuttonsbg"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abhishekaggarwal345@gmail.com"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textColor="@color/fourbuttonsbg"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/linkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://www.linkedin.com/in/abhishek-aggarwal-1a7094210/"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya"
+            android:textSize="15dp"
+            android:textColor="#13B6FF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mentored By"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textColor="@color/fourbuttonsbg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alka Leekha|| Upasana Yadav  "
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="@color/fourbuttonsbg"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestion Link"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#E82424"/>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewcontactus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            android:layout_gravity="center"
+            ads:adUnitId="ca-app-pub-1613752929512816/7702523401">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</ScrollView>
