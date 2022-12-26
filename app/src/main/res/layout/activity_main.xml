@@ -587,6 +587,7 @@
                         android:textColor="@color/black"
                         android:textSize="15dp"
                         android:textStyle="bold"
+                        app:layout_constraintRight_toLeftOf="@id/pdf_view1"
                         app:layout_constraintStart_toEndOf="@+id/requisition"
                         app:layout_constraintTop_toTopOf="parent" />
 
