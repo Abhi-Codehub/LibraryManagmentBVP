@@ -111,7 +111,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="Upasna yadav"
+                            android:text="Upasana yadav"
                             android:layout_marginStart="20dp"
                             android:textColor="@color/white"
                             android:textSize="20dp"
@@ -308,7 +308,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Information Technology Department - 3rd Year "
+            android:text="Information Technology Department "
             android:textAlignment="center"
             android:textSize="12dp"
             android:textColor="@color/fourbuttonsbg"
@@ -344,7 +344,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alka Leekha|| Upasana Yadav  "
+            android:text="Upasana Yadav | Alka Leekha"
             android:textAlignment="center"
             android:textSize="15dp"
             android:textColor="@color/fourbuttonsbg"

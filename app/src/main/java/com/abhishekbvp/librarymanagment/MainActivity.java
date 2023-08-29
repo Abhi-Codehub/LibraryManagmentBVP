@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         pdf_view1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://drive.google.com/file/d/1vAq_RDblWe078A04uUsoWpyq7RomQ9Yn/view?usp=share_link");
+                gotoUrl("https://drive.google.com/file/d/11YkyjdvS6SuD10_T7l21dgRqXhRGVRC1/view?usp=drive_link");
             }
         });
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         pdf_view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://drive.google.com/file/d/1Nrz76u6C0NpfSdro0ehDRtPQwhgJqFNy/view?usp=share_link");
+                gotoUrl("https://drive.google.com/file/d/1DtMTGxFeDTDyEvWi-vN-ubUUze751RFA/view?usp=drive_link");
             }
         });
 
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         pdf_view3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://drive.google.com/file/d/1Q51y62v4Dd9jb5Nw7iQOSrup0_PKtFeh/view?usp=share_link");
+                gotoUrl("https://drive.google.com/file/d/1gjvAkuYNjfA7hcWSfDo-_ZYIGkmGejvS/view?usp=drive_link");
             }
         });
 
@@ -155,21 +155,21 @@ public class MainActivity extends AppCompatActivity {
         opac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("http://115.111.246.28:8380/opac/");
+                gotoUrl("http://115.111.246.28/");
             }
         });
 
         syllabus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://drive.google.com/file/d/105tHDIXb15eWPaC7_Jz5R9BUNGFzt38j/view?usp=share_link");
+                gotoUrl("https://drive.google.com/file/d/1Rco5zLvInGr3OnK3WCZwGqqcJvDCaA9A/view?usp=drive_link");
             }
         });
 
         pyq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://drive.google.com/drive/folders/1LtgshQzGU0YTv8WhqX-lTVIbQBgMHMzH");
+                gotoUrl("https://drive.google.com/drive/folders/1WG9gm_lh7QQi5RKm-LHRSgHqYUmNZ6sI?usp=drive_link");
             }
         });
 
